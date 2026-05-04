@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  background-color: rgb(234, 186, 76);
+  font-family: "Quicksand", sans-serif;
+  max-width: 1300px;
+}
+
+h1, h2 {
+  color: rgb(85, 64, 10);
+  font-family: "Coiny", system-ui;
+  font-style: normal;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(85, 64, 10);
+}
+
+ul {
+  list-style: none;
+  padding: 0%;
+}
+
+li {
+  display: inline;
+  font-size: 3rem;
+  margin: 0 2%;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(85, 64, 10);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: rgb(213, 170, 60);
+}
+
+i:hover {
+  animation: 0.5s linear grow-shrink;
+  /* animation: 0.5s linear spin; */
+}
+
+.card {
+  width: 80%;
+  padding: 30px;
+  margin: 10px auto;
+  background-color: rgb(255 225 154);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(85, 64, 10);
+}
+
+@media (max-width: 375px) {
+  /* For a screen < 375px, this CSS will be read */
+  .card {
+    width: 280px;
+  }
+}
+
+@keyframes grow-shrink {
+  25%,
+  75% {
+    scale: 100%;
+  }
+  50% {
+    scale: 150%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
